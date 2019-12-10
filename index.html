@@ -1,210 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="findhotel.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Fjalla+One"
-      rel="stylesheet"
-    />
-    <title>TravelBangla-Hotel Reservation</title>
-  </head>
-  <body style="font-family: 'Fjalla One', sans-serif;">
-    <div class="header baseWidth clearflix">
-      <div class="topHeader clearflix">
-        <div class="logoTop clearflix">
-          <img
-            src="./img/logo.jpg"
-            alt="logo"
-            style="width:66%; height:auto; margin-left: 2%;"
-          />
-        </div>
-      </div>
-      <div
-        class="searchArea baseWidth clearflix"
-        style="background-image:url(./img/saintmartin.jpg); background-repeat: no-repeat; background-size: contain;"
-      >
-        <h1 id="bannerText">The best Hotel at the best Price</h1>
-        <div class="searchBox">
-          <form action="" id="searchBox">
-            <input
-              id="placeSearch"
-              list="place"
-              name="place"
-              placeholder="eg: city, region, district, specific hotel"
-              style="font-family: 'Fjalla One', sans-serif; letter-spacing: 1px;"
-            />
-            <datalist id="place">
-              <option value="Cox's Bazar"> </option>
-              <option value="Kuakata"> </option>
-              <option value="Rangamati"> </option>
-              <option value="Sylhet"> </option>
-              <option value="St. Martin's Island"> </option>
-            </datalist>
 
-            <select
-              name="room"
-              id="room"
-              style="font-family: 'Fjalla One', sans-serif;"
-            >
-              <option value="" disabled selected>select room quantity</option>
-              <option value="2 adults 1 rom">1 adult 1 room</option>
-              <option value="2 adults 1 rom">2 adults 1 room</option>
-              <option value="2 adults 1 rom">2 adults 2 rooms</option>
-              <option value="2 adults 1 rom">4 adults 2 rooms</option>
-            </select>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="findhotel.css" />
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet" />
+  <title>Find-Hotel BD</title>
+</head>
 
-            <label for="checkin" id="checkin">check in:</label>
-            <input
-              type="date"
-              name="checkin"
-              class="datebox checkinposition"
-              style="font-family: 'Fjalla One', sans-serif;"
-            />
-            <label for="checkout" id="checkout">check out:</label>
-            <input
-              type="date"
-              class="datebox checkoutposition"
-              style="font-family: 'Fjalla One', sans-serif;"
-            />
-          </form>
-        </div>
-        <input
-          type="submit"
-          name=""
-          id="searchButton"
-          value="SEARCH"
-          style="font-family: 'Fjalla One', sans-serif;"
-        />
+<body style="font-family: 'Fjalla One', sans-serif;">
+  <div class="header baseWidth clearflix">
+    <div class="topHeader clearflix">
+      <div class="logoTop clearflix">
+        <img src="./img/logo.jpg" alt="logo" style="width:66%; height:auto; margin-left: 2%;" />
       </div>
     </div>
-    <div class="contentSection baseWidth clearflix">
-      <h2
-        style="text-align:center; margin-top: 1%; 
-        margin-bottom: 1%; 
-        text-decoration: underline;"
-      >
-        Top Destinations
-      </h2>
+    <div class="searchArea baseWidth clearflix"
+      style="background-image:url(./img/saintmartin.jpg); background-repeat: no-repeat; background-size: contain;">
+      <h1 id="bannerText">The best Hotel at the best Price</h1>
+      <div class="searchBox">
+        <form action="" id="searchBox">
+          <input id="placeSearch" list="place" name="place" placeholder="eg: city, region, district, specific hotel"
+            style="font-family: 'Fjalla One', sans-serif; letter-spacing: 1px;" />
+          <datalist id="place">
+            <option value="Cox's Bazar"> </option>
+            <option value="Kuakata"> </option>
+            <option value="Rangamati"> </option>
+            <option value="Sylhet"> </option>
+            <option value="St. Martin's Island"> </option>
+          </datalist>
 
-      <div class="imgcontainer">
-        <div class="layout2img">
-          <div class="saintmartins">
-            <a href="#"
-              ><img
-                src="./img/saintmartins.jpg"
-                alt="Saint Martin's Island"
-                style="width: 100%; height:89%;
+          <select name="room" id="room" style="font-family: 'Fjalla One', sans-serif;">
+            <option value="" disabled selected>select room quantity</option>
+            <option value="2 adults 1 rom">1 adult 1 room</option>
+            <option value="2 adults 1 rom">2 adults 1 room</option>
+            <option value="2 adults 1 rom">2 adults 2 rooms</option>
+            <option value="2 adults 1 rom">4 adults 2 rooms</option>
+          </select>
+
+          <label for="checkin" id="checkin">check in:</label>
+          <input type="date" name="checkin" class="datebox checkinposition"
+            style="font-family: 'Fjalla One', sans-serif;" />
+          <label for="checkout" id="checkout">check out:</label>
+          <input type="date" class="datebox checkoutposition" style="font-family: 'Fjalla One', sans-serif;" />
+        </form>
+      </div>
+      <input type="submit" name="" id="searchButton" value="SEARCH" style="font-family: 'Fjalla One', sans-serif;" />
+    </div>
+  </div>
+  <div class="contentSection baseWidth clearflix">
+    <h2 style="text-align:center; margin-top: 1%; 
+        margin-bottom: 1%; 
+        text-decoration: underline;">
+      Top Destinations
+    </h2>
+
+    <div class="imgcontainer">
+      <div class="layout2img">
+        <div class="saintmartins">
+          <a href="#"><img src="./img/saintmartins.jpg" alt="Saint Martin's Island" style="width: 100%; height:89%;
                 border-top-left-radius: 5px;
-                border-top-right-radius: 5px;"
-            /></a>
-            Saint Martin's Island
-            <a
-              href="#"
-              style="display: inline-block; text-decoration:none; 
+                border-top-right-radius: 5px;" /></a>
+          Saint Martin's Island
+          <a href="#" style="display: inline-block; text-decoration:none; 
               background-color:dodgerblue;
               margin-left: 53%; padding: 1px 5px; 
               color: white; 
-              border-radius: 5px;"
-              >05 Hotels ></a
-            >
-          </div>
-          <div class="ctghilltracts">
-            <a href="#"
-              ><img
-                src="./img/ctghilltracts.jpg"
-                alt="Saint Martin's Island"
-                style="width: 100%; height:89%;
+              border-radius: 5px;">05 Hotels ></a>
+        </div>
+        <div class="ctghilltracts">
+          <a href="#"><img src="./img/ctghilltracts.jpg" alt="Saint Martin's Island" style="width: 100%; height:89%;
                 border-top-left-radius: 5px;
-                border-top-right-radius: 5px;"
-            /></a>
-            Chittagong Hill Tracts
-            <a
-              href="#"
-              style="display: inline-block; text-decoration:none; 
+                border-top-right-radius: 5px;" /></a>
+          Chittagong Hill Tracts
+          <a href="#" style="display: inline-block; text-decoration:none; 
               background-color:dodgerblue; 
               margin-left: 51%; padding: 1px 5px; 
               color: white; 
-              border-radius: 5px;"
-              >120 Hotels ></a
-            >
-          </div>
+              border-radius: 5px;">120 Hotels ></a>
         </div>
-        <div class="layout3img threeimgcenter">
-          <div class="sajekvalley">
-            <a href="#"
-              ><img
-                src="./img/sajekvalley.jpg"
-                alt="Saint Martin's Island"
-                style="width: 100%; height:89%;
+      </div>
+      <div class="layout3img threeimgcenter">
+        <div class="sajekvalley">
+          <a href="#"><img src="./img/sajekvalley.jpg" alt="Saint Martin's Island" style="width: 100%; height:89%;
                 border-top-left-radius: 5px;
-                border-top-right-radius: 5px;"
-            /></a>
-            Sajek Valley
-            <a
-              href="#"
-              style="display: inline; text-decoration:none; 
+                border-top-right-radius: 5px;" /></a>
+          Sajek Valley
+          <a href="#" style="display: inline; text-decoration:none; 
               background-color:dodgerblue;
               margin-left: 47%; padding: 1px 5px; 
               color: white; 
-              border-radius: 5px;"
-              >35 Hotels ></a
-            >
-          </div>
-          <div class="sundarbans">
-            <a href="#"
-              ><img
-                src="./img/sundarbans.jpg"
-                alt="Saint Martin's Island"
-                style="width: 100%; height:89%;
+              border-radius: 5px;">35 Hotels ></a>
+        </div>
+        <div class="sundarbans">
+          <a href="#"><img src="./img/sundarbans.jpg" alt="Saint Martin's Island" style="width: 100%; height:89%;
               border-top-left-radius: 5px;
-                    border-top-right-radius: 5px;"
-            /></a>
-            Sundarban Mangrove Forest
-            <a
-              href="#"
-              style="display: inline; text-decoration:none; 
+                    border-top-right-radius: 5px;" /></a>
+          Sundarban Mangrove Forest
+          <a href="#" style="display: inline; text-decoration:none; 
             background-color:dodgerblue;
             margin-left: 14%; padding: 1px 5px; 
             color: white; 
-            border-radius: 5px;"
-              >25 Hotels ></a
-            >
-          </div>
-          <div class="srimangal">
-            <a href="#"
-              ><img
-                src="./img/srimangal.jpg"
-                alt="Saint Martin's Island"
-                style="width: 100%; height:89%;
+            border-radius: 5px;">25 Hotels ></a>
+        </div>
+        <div class="srimangal">
+          <a href="#"><img src="./img/srimangal.jpg" alt="Saint Martin's Island" style="width: 100%; height:89%;
               border-top-left-radius: 5px;
-                    border-top-right-radius: 5px;"
-            /></a>
-            Srimangal
-            <a
-              href="#"
-              style="display: inline; text-decoration:none; 
+                    border-top-right-radius: 5px;" /></a>
+          Srimangal
+          <a href="#" style="display: inline; text-decoration:none; 
             background-color:dodgerblue;
             margin-left: 51%; padding: 1px 5px; 
             color: white; 
-            border-radius: 5px;"
-              >28 Hotels ></a
-            >
-          </div>
+            border-radius: 5px;">28 Hotels ></a>
         </div>
       </div>
     </div>
-    <div
-      class="footer baseWidth clearflix"
-      style="background-color:blueviolet;
+  </div>
+  <div class="footer baseWidth clearflix" style="background-color:blueviolet;
     text-align:center; 
     margin-top:0px;
     margin-bottom: 5px;
-     padding: 2px; color: white;"
-    >
-      ©2019 Sabbir Ahmed. All rights reserved
-    </div>
-  </body>
+     padding: 2px; color: white;">
+    ©2019 Sabbir Ahmed. All rights reserved
+  </div>
+</body>
+
 </html>
